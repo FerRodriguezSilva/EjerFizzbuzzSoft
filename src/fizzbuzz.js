@@ -5,7 +5,7 @@ function generarFizzBuzz(numero){
     cad= "Fizz";
     if(numero%5==0)
         cad= 'Buzz';
-    if(numero==15)
+    if(numero%3==0 && numero%5==0)
         cad='FizzBuzz'
     return cad;  
 }
