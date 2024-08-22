@@ -10,3 +10,4 @@ function generarFizzBuzz(numero){
     return cad;  
 }
 export default generarFizzBuzz;
+/*Hola*/
