@@ -1,7 +1,10 @@
 function generarFizzBuzz(numero){
+    let cad;
+    cad=numero;
     if(numero%3==0)
-    return "Fizz";
-    else return numero;
-
+    cad= "Fizz";
+    if(numero==5)
+        cad= 'Buzz';
+    return cad;  
 }
 export default generarFizzBuzz;
