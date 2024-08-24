@@ -1,10 +1,10 @@
-import generarFizzBuzz from './fizzbuzz'
+import { generarFizzBuzz, generarSecuencia } from './fizzbuzz'
 describe('FizzBuzz',()=>{
     it ("Generar el mismo numero si no sigue ninguna regla",()=>{
-        expect(generarFizzBuzz(1)).toEqual(1);
+        expect(generarFizzBuzz(1)).toEqual('1');
     });
     it("generar el mismo numero para cualquiier numero si no sigue ninguna regla",()=>{
-        expect(generarFizzBuzz(2)).toEqual(2);
+        expect(generarFizzBuzz(2)).toEqual('2');
     });
     it("Generar Fizz para el 3",()=>{
         expect(generarFizzBuzz(3)).toEqual('Fizz');
@@ -24,7 +24,9 @@ describe('FizzBuzz',()=>{
     it("Generar FizzBuzz para multiplos de 3 y 5", ()=>{
         expect(generarFizzBuzz(30)).toEqual('FizzBuzz');
     });
-
+    it("Generar La secuencia ",()=>{
+        expect(generarSecuencia(7)).toEqual('1 2 Fizz 4 Buzz Fizz 7');
+    });
     
 
 });
